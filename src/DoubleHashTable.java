@@ -1,3 +1,10 @@
+/**name1: Tomer Katee
+ id1: 214166027
+ username1: tomerkatee
+ name2: Ella Kelner
+ id2: 316158898
+ username2: ellakelner
+ */
 import java.util.Random;
 
 public class DoubleHashTable extends OAHashTable {
@@ -12,6 +19,5 @@ public class DoubleHashTable extends OAHashTable {
 	@Override
 	public int Hash(long x, int i) {
 		return Math.floorMod(hashFunc1.Hash(x) + i * (hashFunc2.Hash(x) + 1), getSize());
-
 	}
 }

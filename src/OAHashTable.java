@@ -1,3 +1,10 @@
+/**name1: Tomer Katee
+ id1: 214166027
+ username1: tomerkatee
+ name2: Ella Kelner
+ id2: 316158898
+ username2: ellakelner
+ */
 public abstract class OAHashTable implements IHashTable {
 	
 	private HashTableElement [] table;
@@ -15,13 +22,13 @@ public abstract class OAHashTable implements IHashTable {
 	@Override
 	public HashTableElement Find(long key) {
 		for (int i = 0; i < table.length; i++) {
-			int probeIndex = Hash(key, i);
-			if(table[probeIndex] == null){
-				return null;
-			}
-			else if(table[probeIndex].GetKey() == key && table[probeIndex] != DELETED){
-				return table[probeIndex];
-			}
+            int probeIndex = Hash(key, i);
+            if(table[probeIndex] == null){
+                return null;
+            }
+            else if(table[probeIndex].GetKey() == key && table[probeIndex] != DELETED) {
+                return table[probeIndex];
+            }
 		}
 		return null;
 	}

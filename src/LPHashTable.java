@@ -1,3 +1,10 @@
+/**name1: Tomer Katee
+ id1: 214166027
+ username1: tomerkatee
+ name2: Ella Kelner
+ id2: 316158898
+ username2: ellakelner
+ */
 import java.util.Random;
 
 public class LPHashTable extends OAHashTable {
